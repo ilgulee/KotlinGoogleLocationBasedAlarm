@@ -43,7 +43,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun onClickSettingsButton(view: View) {
-        val intent = Intent(this, SettingsActivity::class.java)
+        val intent = Intent("android.intent.action.SETTINGACTIVITY")
         startActivity(intent)
     }
 }
